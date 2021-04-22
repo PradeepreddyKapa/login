@@ -2,8 +2,8 @@
 Description = login Service
 [Service]
 
-Environment=ZIPKIN_URL=http://ZIPKIN:9411/zipkin/
-Environment=USERS_API-ADDRESS=USERS API
+Environment=ZIPKIN_URL=http://172.31.27.189:9411/api/v2/spans
+Environment=USERS_API_ADDRESS=172.31.22.89
 ExecStart=/root/go/src/login/login/login
 SyslogIdentifier=login
 
