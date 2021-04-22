@@ -1,1 +1,11 @@
-hi 
+[Unit]
+Description = login Service
+[Service]
+
+Environment=ZIPKIN_URL=http://ZIPKIN:9411/zipkin/
+Environment=USERS_API-ADDRESS=USERS API
+ExecStart=/root/go/src/login/login/login
+SyslogIdentifier=login
+
+[Install]
+WantedBy=multi-user.target
