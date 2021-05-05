@@ -3,7 +3,7 @@ Description = login Service
 [Service]
 User=root
 Environment=ZIPKIN_URL=http://172.31.27.189:9411/api/v2/spans
-Environment=USERS_API_ADDRESS=172.31.56.133
+Environment=USERS_API_ADDRESS=USERS_ENDPOINT
 ExecStart=/root/todo-auto/login/login
 SyslogIdentifier=login
 
