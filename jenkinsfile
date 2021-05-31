@@ -16,7 +16,7 @@ pipeline {
 
             steps {
                 sh '''
-                zip -r login.zip
+                zip -r login.zip login
                 '''
 
             }
